@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Urban</string>
+    <string name="splash_logo">splash_logo</string>
+    <string name="welcome_to_meraform">Welcome to MeraForm</string>
+    <string name="we_re_thrilled_to_see_you_again">We\'re thrilled to see you again!</string>
+    <string name="enter_your_registered_mobile_number_to_receive_a_one_time_password_otp_for_secure_login">Enter your registered mobile number to receive a One-Time Password (OTP) for secure login.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="proceed_ahead">Proceed Ahead</string>
+    <string name="enter_mobile_number">Enter Mobile number</string>
+    <string name="skip">Skip</string>
+</resources>
