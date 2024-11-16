@@ -8,4 +8,10 @@
     <string name="proceed_ahead">Proceed Ahead</string>
     <string name="enter_mobile_number">Enter Mobile number</string>
     <string name="skip">Skip</string>
+    <string name="edit">Edit</string>
+    <string name="enter_the_6_digit_otp">Enter the 6-digit OTP</string>
+    <string name="didn_t_receive_an_otp">Didn\'t receive an OTP ? </string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="_0_89">0:89</string>
+    <string name="verify_amp_continue"><![CDATA[Verify & Continue]]></string>
 </resources>
