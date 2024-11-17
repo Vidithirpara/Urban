@@ -14,6 +14,7 @@ import com.example.viewpager.Utils.validateOTP
 import com.example.viewpager.Utils.validatePhoneNumber
 import com.ext.urban.databinding.ActivityLoginBinding
 import com.ext.urban.home.HomeActivity
+import com.ext.urban.registration.RegistrationActivity1
 import java.text.DecimalFormat
 import java.text.NumberFormat
 
@@ -59,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.llVerifyAndContinue.setOnClickListener{
             if (validateOTP(this@LoginActivity, binding.otpDigit1, binding.otpDigit2, binding.otpDigit3, binding.otpDigit4, binding.otpDigit5, binding.otpDigit6)){
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, RegistrationActivity1::class.java)
                 startActivity(intent)
             }
         }

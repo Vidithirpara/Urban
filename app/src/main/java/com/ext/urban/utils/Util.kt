@@ -5,7 +5,9 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import android.text.TextUtils
+import android.util.Patterns
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 fun checkForInternet(context: Context): Boolean {
@@ -37,6 +39,7 @@ fun validatePhoneNumber(context: Context, phoneNumber : EditText): Boolean{
     return true
 }
 
+
 fun validateOTP(context: Context, otpDigit1 : EditText, otpDigit2 : EditText, otpDigit3 : EditText, otpDigit4 : EditText, otpDigit5 : EditText, otpDigit6 : EditText): Boolean{
     if (TextUtils.isEmpty(otpDigit1.text.toString()) || TextUtils.isEmpty(otpDigit2.text.toString()) || TextUtils.isEmpty(otpDigit3.text.toString()) || TextUtils.isEmpty(otpDigit4.text.toString()) || TextUtils.isEmpty(otpDigit5.text.toString()) || TextUtils.isEmpty(otpDigit6.text.toString())){
         Toast.makeText(context, "Please enter correct OTP", Toast.LENGTH_SHORT).show()
@@ -46,3 +49,59 @@ fun validateOTP(context: Context, otpDigit1 : EditText, otpDigit2 : EditText, ot
 }
 
 
+fun validateFirstNameORLastName(context: Context, firstName : EditText, lastName : EditText) : Boolean{
+    if (TextUtils.isEmpty(firstName.text)) {
+        Toast.makeText(context, "Enter First Name", Toast.LENGTH_SHORT).show()
+        return false
+    } else if (TextUtils.isEmpty(lastName.text)) {
+        Toast.makeText(context, "Enter Last Name", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateEmailAddress(context: Context, emailAddress : EditText) : Boolean{
+    if (TextUtils.isEmpty(emailAddress.text)){
+        Toast.makeText(context, "Email address not empty", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    else if(!Patterns.EMAIL_ADDRESS.matcher(emailAddress.getText().toString()).matches()){
+        Toast.makeText(context, "Enter valid email address", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+
+
+
+fun validateAadharNumber(context: Context, aadharNumber : EditText) : Boolean{
+    if (TextUtils.isEmpty(aadharNumber.text)){
+        Toast.makeText(context, "Aadhar number not empty", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    else if(aadharNumber.text.length < 12){
+        Toast.makeText(context, "Enter valid aadhar number", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateBirthDate(context: Context, birthDate : TextView) : Boolean{
+    if (birthDate.text == "Select date"){
+        Toast.makeText(context, "Please select birth date", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateGenderAndCategory(context: Context, gender : TextView, category : TextView) : Boolean{
+    if (gender.text == "-Select one-") {
+        Toast.makeText(context, "Please select gender", Toast.LENGTH_SHORT).show()
+        return false
+    } else if (category.text == "-Select one-") {
+        Toast.makeText(context, "Please select category", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
