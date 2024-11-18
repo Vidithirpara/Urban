@@ -72,9 +72,6 @@ fun validateEmailAddress(context: Context, emailAddress : EditText) : Boolean{
     return true
 }
 
-
-
-
 fun validateAadharNumber(context: Context, aadharNumber : EditText) : Boolean{
     if (TextUtils.isEmpty(aadharNumber.text)){
         Toast.makeText(context, "Aadhar number not empty", Toast.LENGTH_SHORT).show()
@@ -101,6 +98,48 @@ fun validateGenderAndCategory(context: Context, gender : TextView, category : Te
         return false
     } else if (category.text == "-Select one-") {
         Toast.makeText(context, "Please select category", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateFatherNameORMotherName(context: Context, fatherName : EditText, motherName : EditText) : Boolean{
+    if (TextUtils.isEmpty(fatherName.text)) {
+        Toast.makeText(context, "Enter Father Name", Toast.LENGTH_SHORT).show()
+        return false
+    } else if (TextUtils.isEmpty(motherName.text)) {
+        Toast.makeText(context, "Enter Mother Name", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateAddress(context: Context, address : EditText) : Boolean{
+    if (TextUtils.isEmpty(address.text)) {
+        Toast.makeText(context, "Address is not empty", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateStateAndCity(context: Context, state : TextView, city : TextView) : Boolean{
+    if (state.text == "-Select one-") {
+        Toast.makeText(context, "Please select state", Toast.LENGTH_SHORT).show()
+        return false
+    } else if (city.text == "-Select one-") {
+        Toast.makeText(context, "Please select city", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validatePincode(context: Context, pinCode : EditText) : Boolean{
+    if (TextUtils.isEmpty(pinCode.text)){
+        Toast.makeText(context, "Pincode not empty", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    else if(pinCode.text.length < 6){
+        Toast.makeText(context, "Enter valid pincode", Toast.LENGTH_SHORT).show()
         return false
     }
     return true

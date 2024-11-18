@@ -39,4 +39,18 @@
         <item>Category_3</item>
     </string-array>
 
+    <string-array name="spinner_state">
+        <item>-Select one-</item>
+        <item>State-1</item>
+        <item>State-2</item>
+        <item>State-3</item>
+    </string-array>
+
+    <string-array name="spinner_city">
+        <item>-Select one-</item>
+        <item>City-1</item>
+        <item>City-2</item>
+        <item>City-3</item>
+    </string-array>
+
 </resources>
