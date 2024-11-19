@@ -325,26 +325,21 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/llContinue"
+                <TextView
+                    android:id="@+id/tvContinue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:background="@drawable/rounded_corner_orange"
-                    android:padding="@dimen/_12ssp">
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_12ssp"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/raleway_bold"
-                        android:gravity="center"
-                        android:includeFontPadding="false"
-                        android:text="Continue"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_12ssp" />
-
-                </LinearLayout>
 
             </LinearLayout>
 

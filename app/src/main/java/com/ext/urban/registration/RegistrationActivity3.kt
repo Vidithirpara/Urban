@@ -29,7 +29,6 @@ class RegistrationActivity3 : AppCompatActivity() {
         setContentView(binding.root)
 
         setOnClickListener()
-
     }
 
     private fun setOnClickListener(){
@@ -43,7 +42,7 @@ class RegistrationActivity3 : AppCompatActivity() {
             binding.spinnerCity.performClick()
         }
 
-        binding.llSaveDetails.setOnClickListener {
+        binding.tvSaveDetails.setOnClickListener {
             if (validateAddress(this@RegistrationActivity3, binding.etAddress1) && validateStateAndCity(this@RegistrationActivity3, binding.tvState, binding.tvCity) && validatePincode(this@RegistrationActivity3, binding.etPinCode)){
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)

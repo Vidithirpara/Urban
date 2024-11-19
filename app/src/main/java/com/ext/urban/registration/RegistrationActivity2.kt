@@ -42,7 +42,7 @@ class RegistrationActivity2 : AppCompatActivity() {
             override fun onStopTrackingTouch(seekBar: SeekBar?) {}
         })
 
-        binding.llContinue.setOnClickListener {
+        binding.tvContinue.setOnClickListener {
             if (validateFatherNameORMotherName(this@RegistrationActivity2, binding.etFatherName, binding.etMotherName)){
                 val intent = Intent(this, RegistrationActivity3::class.java)
                 startActivity(intent)

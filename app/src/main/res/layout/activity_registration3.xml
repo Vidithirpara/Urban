@@ -186,26 +186,20 @@
                     android:maxLength="6"
                     android:textColor="@color/black" />
 
-                <LinearLayout
-                    android:id="@+id/llSaveDetails"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_60sdp"
-                    android:background="@drawable/rounded_corner_orange"
-                    android:padding="@dimen/_12ssp">
-
                     <TextView
+                        android:id="@+id/tvSaveDetails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="@font/raleway_bold"
                         android:gravity="center"
+                        android:layout_marginTop="@dimen/_60sdp"
+                        android:background="@drawable/rounded_corner_orange"
+                        android:padding="@dimen/_12ssp"
                         android:includeFontPadding="false"
                         android:text="@string/save_details"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
-
-                </LinearLayout>
 
             </LinearLayout>
 

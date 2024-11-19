@@ -53,4 +53,7 @@ dependencies {
 
     implementation (libs.sdp.android)
     implementation (libs.ssp.android)
+
+    implementation (libs.dotsindicator)
+
 }

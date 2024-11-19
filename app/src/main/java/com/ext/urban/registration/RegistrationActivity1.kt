@@ -46,7 +46,7 @@ class RegistrationActivity1 : AppCompatActivity() {
             binding.spinnerCategory.performClick()
         }
 
-        binding.llContinue.setOnClickListener{
+        binding.tvContinue.setOnClickListener{
             if (validateFirstNameORLastName(this@RegistrationActivity1, binding.etFirstName, binding.etLastName) && validatePhoneNumber(this@RegistrationActivity1, binding.etPhoneNumber) && validateEmailAddress(this@RegistrationActivity1, binding.etEmail) && validateAadharNumber(this@RegistrationActivity1, binding.etAadharCardNumber) && validateBirthDate(this@RegistrationActivity1, binding.tvBirthDate) && validateGenderAndCategory(this@RegistrationActivity1, binding.tvGender, binding.tvCategory)){
                 val intent = Intent(this, RegistrationActivity2::class.java)
                 startActivity(intent)
