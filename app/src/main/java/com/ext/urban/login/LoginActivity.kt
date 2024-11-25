@@ -71,6 +71,11 @@ class LoginActivity : AppCompatActivity() {
                 binding.txtResendOtp.setTextColor(Color.GRAY)
             }
         }
+
+        binding.txtSkip.setOnClickListener{
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun MemoryAllocation() {

@@ -25,6 +25,12 @@
         <item name="android:includeFontPadding">false</item>
     </style>
 
+    <style name="poppinsSemiBoldText">
+        <item name="fontFamily">@font/popins_semibold</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
     <string-array name="spinner_gender">
         <item>-Select one-</item>
         <item>Male</item>
