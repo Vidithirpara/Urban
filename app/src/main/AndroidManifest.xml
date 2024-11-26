@@ -15,29 +15,30 @@
         android:theme="@style/Theme.Urban"
         tools:targetApi="31">
         <activity
-            android:name=".registration.RegistrationActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".registration.RegistrationActivity2"
-            android:exported="false">
-
-        </activity>
-        <activity
-            android:name=".registration.RegistrationActivity1"
-            android:exported="false" />
-        <activity
-            android:name=".home.HomeActivity"
-            android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".login.LoginActivity"
+            android:name=".bottommenu.BottomViewNavigationActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".registration.RegistrationActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".registration.RegistrationActivity2"
+            android:exported="false"></activity>
+        <activity
+            android:name=".registration.RegistrationActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".splash.SplashActivity"

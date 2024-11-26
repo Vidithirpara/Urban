@@ -39,22 +39,22 @@ class HomeActivity : AppCompatActivity() {
         adapterTopServices = AdapterTopServices()
         adapterFAQ = AdapterFAQ()
 
-        binding.viewPager.adapter = adapterTopViewPager
-        binding.viewPagerYourOrder.adapter = adapterYourOrderViewPager
-
-        binding.rvTopCategories.layoutManager = GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false)
-        binding.rvTopCategories.adapter = adapterTopCategories
-
-        binding.rvTopServices.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        binding.rvTopServices.adapter = adapterTopServices
-
-        binding.rvFAQ.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        binding.rvFAQ.adapter = adapterFAQ
-
-        binding.viewPagerYourOrder.setPageMargin(-75)
-
-        binding.dotIndicator.attachTo(binding.viewPager)
-        binding.dotIndicatorYourOrder.attachTo(binding.viewPagerYourOrder)
+//        binding.viewPager.adapter = adapterTopViewPager
+//        binding.viewPagerYourOrder.adapter = adapterYourOrderViewPager
+//
+//        binding.rvTopCategories.layoutManager = GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false)
+//        binding.rvTopCategories.adapter = adapterTopCategories
+//
+//        binding.rvTopServices.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+//        binding.rvTopServices.adapter = adapterTopServices
+//
+//        binding.rvFAQ.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+//        binding.rvFAQ.adapter = adapterFAQ
+//
+//        binding.viewPagerYourOrder.setPageMargin(-75)
+//
+//        binding.dotIndicator.attachTo(binding.viewPager)
+//        binding.dotIndicatorYourOrder.attachTo(binding.viewPagerYourOrder)
 
     }
 }

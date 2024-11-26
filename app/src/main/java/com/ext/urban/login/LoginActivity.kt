@@ -12,6 +12,7 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.viewpager.Utils.validateOTP
 import com.example.viewpager.Utils.validatePhoneNumber
+import com.ext.urban.bottommenu.BottomViewNavigationActivity
 import com.ext.urban.databinding.ActivityLoginBinding
 import com.ext.urban.home.HomeActivity
 import com.ext.urban.registration.RegistrationActivity1
@@ -73,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.txtSkip.setOnClickListener{
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, BottomViewNavigationActivity::class.java)
             startActivity(intent)
         }
     }

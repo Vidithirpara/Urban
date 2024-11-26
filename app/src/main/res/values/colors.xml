@@ -12,5 +12,7 @@
     <color name="orange3">#fcc8ae</color>
     <color name="orange4">#fff3e1</color>
     <color name="orange5">#ffead5</color>
+    <color name="gray3">#F7F7F7</color>
+    <color name="gray4">#F4F4F4</color>
 
 </resources>
