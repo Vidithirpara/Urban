@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:text="What is Mera Form?"
+                android:text="@string/what_is_mera_form"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10ssp" />
 
@@ -32,12 +32,14 @@
                 android:id="@+id/imgDownArrow"
                 android:layout_width="@dimen/_19sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/down_arrow" />
 
             <ImageView
                 android:id="@+id/imgUpArrow"
                 android:layout_width="@dimen/_19sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/up_arrow"
                 android:visibility="gone" />
 
@@ -65,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:text="Mera Form is an online platform designed to streamline the process of filling out and submitting various form. It simplifies form management for individuals and organizations by offering a user-friendly interface and secure submission options."
+                android:text="@string/mera_form_is_an_online_platform_designed_to_streamline_the_process_of_filling_out_and_submitting_various_form_it_simplifies_form_management_for_individuals_and_organizations_by_offering_a_user_friendly_interface_and_secure_submission_options"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_9ssp" />
 

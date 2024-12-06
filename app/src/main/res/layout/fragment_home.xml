@@ -34,10 +34,11 @@
                     <ImageView
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
+                        android:contentDescription="@string/app_name"
                         android:src="@drawable/drawer_btn" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_weight="1"
@@ -53,7 +54,7 @@
                                 style="@style/ralewayBoldText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Welcome,"
+                                android:text="@string/welcome2"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_14ssp" />
 
@@ -62,7 +63,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_4sdp"
-                                android:text="Rohan"
+                                android:text="@string/rohan"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_14ssp" />
 
@@ -77,6 +78,7 @@
                             <ImageView
                                 android:layout_width="@dimen/_10sdp"
                                 android:layout_height="@dimen/_10sdp"
+                                android:contentDescription="@string/app_name"
                                 android:src="@drawable/location" />
 
                             <TextView
@@ -84,7 +86,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_4sdp"
-                                android:text="Ahmedabad"
+                                android:text="@string/ahmedabad"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_10ssp" />
 
@@ -92,6 +94,7 @@
                                 android:layout_width="@dimen/_8sdp"
                                 android:layout_height="@dimen/_10sdp"
                                 android:layout_marginStart="@dimen/_6sdp"
+                                android:contentDescription="@string/app_name"
                                 android:src="@drawable/arrow_down" />
 
                         </LinearLayout>
@@ -101,6 +104,7 @@
                     <ImageView
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
+                        android:contentDescription="@string/app_name"
                         android:src="@drawable/icon_notification" />
 
                 </LinearLayout>
@@ -145,10 +149,10 @@
 
                     <TextView
                         style="@style/ralewayBoldText"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Your Order"
+                        android:text="@string/your_order"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_11ssp" />
 
@@ -156,7 +160,7 @@
                         style="@style/poppinsMediumText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="See all"
+                        android:text="@string/see_all"
                         android:textColor="@color/orange"
                         android:textSize="@dimen/_9ssp" />
 
@@ -195,10 +199,10 @@
 
                     <TextView
                         style="@style/ralewayBoldText"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Top Categories"
+                        android:text="@string/top_categories"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_11ssp" />
 
@@ -206,7 +210,7 @@
                         style="@style/poppinsMediumText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="See all"
+                        android:text="@string/see_all"
                         android:textColor="@color/orange"
                         android:textSize="@dimen/_9ssp" />
 
@@ -229,10 +233,10 @@
 
                     <TextView
                         style="@style/ralewayBoldText"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Top Services"
+                        android:text="@string/top_services"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_11ssp" />
 
@@ -240,7 +244,7 @@
                         style="@style/poppinsMediumText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="See all"
+                        android:text="@string/see_all"
                         android:textColor="@color/orange"
                         android:textSize="@dimen/_9ssp" />
 
@@ -271,7 +275,7 @@
                         style="@style/ralewayBoldText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Frequently Asked Question"
+                        android:text="@string/frequently_asked_question"
                         android:layout_marginHorizontal="@dimen/_14sdp"
                         android:layout_marginTop="@dimen/_20sdp"
                         android:textColor="@color/black"
@@ -291,7 +295,7 @@
                     style="@style/ralewayBoldText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Support"
+                    android:text="@string/contact_support"
                     android:layout_marginHorizontal="@dimen/_14sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textColor="@color/black"
@@ -312,7 +316,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="+91"
+                        android:text="@string/_91"
                         android:layout_marginStart="@dimen/_4sdp"
                         style="@style/poppinsRegularText"
                         android:textColor="@color/black"
@@ -322,7 +326,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="987654321"
+                        android:text="@string/_987654321"
                         android:layout_marginStart="@dimen/_4sdp"
                         style="@style/poppinsRegularText"
                         android:textColor="@color/black"
@@ -344,17 +348,19 @@
                     android:orientation="horizontal"
                     android:paddingHorizontal="@dimen/_14sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginBottom="@dimen/_10sdp">
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="@dimen/_22sdp"
                         android:layout_height="@dimen/_22sdp"
+                        android:contentDescription="@string/app_name"
                         android:src="@drawable/email"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="support@meraform.com"
+                        android:text="@string/support_meraform_com"
                         android:layout_marginStart="@dimen/_4sdp"
                         style="@style/poppinsRegularText"
                         android:textColor="@color/black"

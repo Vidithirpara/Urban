@@ -3,12 +3,12 @@ package com.ext.urban.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.ext.urban.databinding.HomescreenTopCategoriesDesignBinding
+import com.ext.urban.databinding.RawTopCategoriesBinding
 
 class AdapterTopCategories : RecyclerView.Adapter<AdapterTopCategories.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = HomescreenTopCategoriesDesignBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RawTopCategoriesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -20,5 +20,5 @@ class AdapterTopCategories : RecyclerView.Adapter<AdapterTopCategories.ViewHolde
         return 6
     }
 
-    class ViewHolder(val binding: HomescreenTopCategoriesDesignBinding) : RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: RawTopCategoriesBinding) : RecyclerView.ViewHolder(binding.root)
 }

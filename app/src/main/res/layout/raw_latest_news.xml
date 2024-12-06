@@ -19,7 +19,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -29,7 +29,7 @@
                     style="@style/ralewayBoldText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LatestNews"
+                    android:text="@string/latestnews"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_10ssp" />
 
@@ -44,7 +44,7 @@
                 style="@style/poppinsMediumText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="January 1, 2024"
+                android:text="@string/january_1_2024"
                 android:textColor="@color/gray2"
                 android:textSize="@dimen/_8ssp" />
 
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_9sdp"
-            android:text="Climate Change Mitigation Act"
+            android:text="@string/climate_change_mitigation_act"
             android:textColor="@color/black"
             android:textSize="@dimen/_10ssp" />
 
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_3sdp"
-            android:text="This act aims to reduce greenhouse gas emissions by 40% by 2030 through stricter regulations."
+            android:text="@string/this_act_aims_to_reduce_greenhouse_gas_emissions_by_40_by_2030_through_stricter_regulations"
             android:textColor="@color/gray2"
             android:textSize="@dimen/_9ssp" />
 
@@ -78,7 +78,7 @@
                 style="@style/poppinsMediumText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View Service"
+                android:text="@string/view_service"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_9ssp" />
 
@@ -87,6 +87,7 @@
                 android:layout_height="@dimen/_10sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_5sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/next_arrow" />
 
         </LinearLayout>

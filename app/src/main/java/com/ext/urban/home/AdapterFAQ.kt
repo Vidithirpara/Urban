@@ -4,14 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.ext.urban.databinding.HomescreenFaqDesignBinding
+import com.ext.urban.databinding.RawFaqBinding
 
 class AdapterFAQ : RecyclerView.Adapter<AdapterFAQ.ViewHolder>() {
 
     private var lastPosition = -1
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = HomescreenFaqDesignBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RawFaqBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -53,5 +53,5 @@ class AdapterFAQ : RecyclerView.Adapter<AdapterFAQ.ViewHolder>() {
         return 3
     }
 
-    class ViewHolder(val binding: HomescreenFaqDesignBinding) : RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: RawFaqBinding) : RecyclerView.ViewHolder(binding.root)
 }

@@ -27,7 +27,7 @@ class AdapterTopViewPager(val context: Context) : PagerAdapter() {
 
         val layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
-        val itemView : View = layoutInflater.inflate(R.layout.homescreen_top_viewpager_design, container, false)
+        val itemView : View = layoutInflater.inflate(R.layout.raw_latest_news, container, false)
         val latestNews : TextView = itemView.findViewById(R.id.tvLatestNews)
 
         val spannableString = SpannableString(latestNews.text)

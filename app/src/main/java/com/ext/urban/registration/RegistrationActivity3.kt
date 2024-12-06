@@ -5,18 +5,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.viewpager.Utils.validateAddress
 import com.example.viewpager.Utils.validatePincode
 import com.example.viewpager.Utils.validateStateAndCity
 import com.ext.urban.R
+import com.ext.urban.bottommenu.BottomViewNavigationActivity
 import com.ext.urban.databinding.ActivityRegistration3Binding
-import com.ext.urban.home.HomeActivity
 
 class RegistrationActivity3 : AppCompatActivity() {
 
@@ -44,7 +39,7 @@ class RegistrationActivity3 : AppCompatActivity() {
 
         binding.tvSaveDetails.setOnClickListener {
             if (validateAddress(this@RegistrationActivity3, binding.etAddress1) && validateStateAndCity(this@RegistrationActivity3, binding.tvState, binding.tvCity) && validatePincode(this@RegistrationActivity3, binding.etPinCode)){
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, BottomViewNavigationActivity::class.java)
                 startActivity(intent)
             }
         }

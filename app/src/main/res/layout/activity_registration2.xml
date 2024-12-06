@@ -25,6 +25,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_9sdp"
                 android:layout_marginTop="@dimen/_20sdp"
+                android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop"
                 android:src="@drawable/back_arrow" />
 
@@ -148,7 +149,7 @@
                     android:gravity="center"
                     android:includeFontPadding="false"
                     android:padding="@dimen/_12ssp"
-                    android:text="Continue"
+                    android:text="@string/continue2"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
 

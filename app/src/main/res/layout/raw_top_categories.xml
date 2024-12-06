@@ -22,6 +22,7 @@
             <ImageView
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/home"
                 android:layout_gravity="center"/>
 
@@ -39,7 +40,7 @@
                 style="@style/poppinsMediumText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:text="@string/_5"
                 android:textSize="@dimen/_10sdp"
                 android:textColor="@color/black" />
 
@@ -50,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Education"
+        android:text="@string/education"
         android:textSize="@dimen/_10sdp"
         android:textColor="@color/black"
         style="@style/poppinsMediumText"

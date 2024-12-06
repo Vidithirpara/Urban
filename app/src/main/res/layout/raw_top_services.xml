@@ -21,9 +21,9 @@
 
             <TextView
                 style="@style/poppinsSemiBoldText"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Expedited Services"
+                android:text="@string/expedited_services"
                 android:textColor="@color/black"
                 android:layout_weight="1"
                 android:textSize="@dimen/_10sdp" />
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="₹"
+                    android:text="@string/rupees"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_10ssp" />
 
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_3sdp"
-                    android:text="528"
+                    android:text="@string/_528"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_9ssp" />
 
@@ -67,6 +67,7 @@
                 android:layout_width="@dimen/_10sdp"
                 android:layout_height="@dimen/_10sdp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/user" />
 
             <TextView
@@ -76,7 +77,7 @@
                 android:layout_gravity="top"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:text="Sanjay Rao"
+                android:text="@string/sanjay_rao"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10ssp" />
 
@@ -92,6 +93,7 @@
                 android:layout_width="@dimen/_10sdp"
                 android:layout_height="@dimen/_10sdp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/star" />
 
             <TextView
@@ -99,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
-                android:text="3.6 Rate"
+                android:text="@string/_3_6_rate"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10ssp" />
 
@@ -115,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
-                android:text="17 Reviews"
+                android:text="@string/_17_reviews"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10ssp" />
 

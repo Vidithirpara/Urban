@@ -17,6 +17,7 @@
     <ImageView
         android:layout_width="@dimen/_28sdp"
         android:layout_height="@dimen/_28sdp"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/job" />
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
-        android:text="Job"
+        android:text="@string/job"
         android:textColor="@color/black"
         android:textSize="@dimen/_12ssp" />
 
@@ -34,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_weight="1"
-        android:text="05 Available"
+        android:text="@string/_05_available"
         android:textColor="@color/gray"
         android:textSize="@dimen/_10sdp" />
 
@@ -42,7 +43,7 @@
         style="@style/poppinsMediumText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See all"
+        android:text="@string/see_all"
         android:textColor="@color/orange"
         android:textSize="@dimen/_10sdp" />
 

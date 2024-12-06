@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.ext.urban.R
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +40,50 @@ class OrderFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_order, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val adapterPurchases = AdapterPurchases(requireContext())
+
+        val rvPurchases: RecyclerView = view.findViewById(R.id.rvPurchases)
+        rvPurchases.layoutManager = LinearLayoutManager(context)
+        rvPurchases.adapter = adapterPurchases
+
+        val tvAll : TextView = view.findViewById(R.id.tvAll)
+        val tvNew : TextView = view.findViewById(R.id.tvNew)
+        val tvOngoing : TextView = view.findViewById(R.id.tvOngoing)
+        val tvCompleted : TextView = view.findViewById(R.id.tvCompleted)
+
+
+        tvAll.setOnClickListener {
+            tvAll.setBackgroundResource(R.drawable.rounded_corner_white)
+            tvNew.setBackgroundResource(0)
+            tvOngoing.setBackgroundResource(0)
+            tvCompleted.setBackgroundResource(0)
+        }
+
+        tvNew.setOnClickListener {
+            tvNew.setBackgroundResource(R.drawable.rounded_corner_white)
+            tvAll.setBackgroundResource(0)
+            tvOngoing.setBackgroundResource(0)
+            tvCompleted.setBackgroundResource(0)
+        }
+
+        tvOngoing.setOnClickListener {
+            tvOngoing.setBackgroundResource(R.drawable.rounded_corner_white)
+            tvNew.setBackgroundResource(0)
+            tvAll.setBackgroundResource(0)
+            tvCompleted.setBackgroundResource(0)
+        }
+
+        tvCompleted.setOnClickListener {
+            tvCompleted.setBackgroundResource(R.drawable.rounded_corner_white)
+            tvAll.setBackgroundResource(0)
+            tvOngoing.setBackgroundResource(0)
+            tvNew.setBackgroundResource(0)
+        }
+
     }
 
     companion object {

@@ -21,6 +21,7 @@
             <ImageView
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/home"
                 android:layout_gravity="center"/>
 
@@ -44,7 +45,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Passport Services"
+                    android:text="@string/passport_services"
                     android:marqueeRepeatLimit="marquee_forever"
                     android:textColor="@color/black"
                     android:ellipsize="marquee"
@@ -56,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="2 days ago"
+                    android:text="@string/_2_days_ago"
                     android:textColor="@color/gray2"
                     android:textSize="@dimen/_8ssp" />
 
@@ -71,6 +72,7 @@
                 <ImageView
                     android:layout_width="@dimen/_12sdp"
                     android:layout_height="@dimen/_12sdp"
+                    android:contentDescription="@string/app_name"
                     android:src="@drawable/user" />
 
                 <TextView
@@ -79,7 +81,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="Sanjay Rao"
+                    android:text="@string/sanjay_rao"
                     android:layout_gravity="top"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_10ssp" />
@@ -96,6 +98,7 @@
                         android:layout_width="@dimen/_10sdp"
                         android:layout_height="@dimen/_10sdp"
                         android:src="@drawable/chat"
+                        android:contentDescription="@string/app_name"
                         android:layout_gravity="center" />
 
                     <TextView
@@ -103,7 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:text="chat"
+                        android:text="@string/chat"
                         android:layout_gravity="center"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_9ssp" />

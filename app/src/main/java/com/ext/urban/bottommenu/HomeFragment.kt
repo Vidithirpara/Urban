@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.ext.urban.R
-import com.ext.urban.databinding.ActivityHomeBinding
 import com.ext.urban.home.AdapterFAQ
 import com.ext.urban.home.AdapterTopCategories
 import com.ext.urban.home.AdapterTopServices

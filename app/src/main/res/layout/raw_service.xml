@@ -15,9 +15,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Digital Education Initiatives"
+            android:text="@string/digital_education_initiatives"
             android:layout_weight="1"
             style="@style/poppinsMediumText"
             android:textColor="@color/black"
@@ -27,6 +27,7 @@
         <ImageView
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/uparrow"/>
 
     </LinearLayout>
@@ -40,14 +41,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Submission Date : "
+            android:text="@string/last_submission_date"
             style="@style/poppinsMediumText"
             android:textSize="@dimen/_10sdp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="11 August 2024"
+            android:text="@string/_11_august_2024"
             style="@style/poppinsSemiBoldText"
             android:textSize="@dimen/_10sdp"/>
 

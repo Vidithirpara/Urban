@@ -45,9 +45,7 @@ class ServiceFragment : Fragment() {
         val adapterServices = AdapterServicesCategory(requireContext())
 
         val rvServiceCategory: RecyclerView = view.findViewById(R.id.rvServiceCategory)
-
         rvServiceCategory.layoutManager = LinearLayoutManager(context)
-
         rvServiceCategory.adapter = adapterServices
     }
 

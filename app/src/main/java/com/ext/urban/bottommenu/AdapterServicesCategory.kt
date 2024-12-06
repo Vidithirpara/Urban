@@ -10,14 +10,12 @@ import com.ext.urban.databinding.RawServicesCategoryBinding
 class AdapterServicesCategory(val requireContext: Context) : RecyclerView.Adapter<AdapterServicesCategory.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding =
-            RawServicesCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RawServicesCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val serviceAdapter = AdapterServices(requireContext)
-
         holder.binding.rvServices.layoutManager = LinearLayoutManager(requireContext)
         holder.binding.rvServices.adapter = serviceAdapter
     }

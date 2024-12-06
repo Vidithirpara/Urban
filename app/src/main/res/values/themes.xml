@@ -19,6 +19,10 @@
         <item name="android:includeFontPadding">false</item>
     </style>
 
+    <style name="ShapeAppearanceOverlay.App.CornerSize6Percent" parent="">
+        <item name="cornerSize">4%</item>
+    </style>
+
     <style name="ralewayBoldText">
         <item name="fontFamily">@font/raleway_bold</item>
         <item name="android:textSize">@dimen/_15ssp</item>
@@ -46,9 +50,10 @@
 
     <string-array name="spinner_category2">
         <item>-Select one-</item>
-        <item>Category_1</item>
-        <item>Category_2</item>
-        <item>Category_3</item>
+        <item>General</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>OBC</item>
     </string-array>
 
     <string-array name="spinner_state">

@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -15,8 +19,11 @@
         android:theme="@style/Theme.Urban"
         tools:targetApi="31">
         <activity
+            android:name=".bottommenu.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".bottommenu.BottomViewNavigationActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,18 +35,16 @@
             android:exported="false" />
         <activity
             android:name=".registration.RegistrationActivity2"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".registration.RegistrationActivity1"
             android:exported="false" />
         <activity
             android:name=".home.HomeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".login.LoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true" />
