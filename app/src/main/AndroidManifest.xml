@@ -19,6 +19,12 @@
         android:theme="@style/Theme.Urban"
         tools:targetApi="31">
         <activity
+            android:name=".navigationDrawer.BillingSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".navigationDrawer.NavigationDrawerActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".bottommenu.ProfileActivity"
             android:exported="false" />
         <activity
@@ -40,11 +46,8 @@
             android:name=".registration.RegistrationActivity1"
             android:exported="false" />
         <activity
-            android:name=".home.HomeActivity"
-            android:exported="true" />
-        <activity
             android:name=".login.LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true" />

@@ -2,78 +2,99 @@ package com.ext.urban.bottommenu
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.ext.urban.R
-import com.ext.urban.databinding.ActivityBottomViewNavigationBinding
-import com.ext.urban.registration.RegistrationActivity2
+import com.ext.urban.navigationDrawer.NavigationDrawerActivity
 
-class BottomViewNavigationActivity : AppCompatActivity() {
+class BottomViewNavigationActivity : NavigationDrawerActivity() {
 
-    private lateinit var binding : ActivityBottomViewNavigationBinding
+    lateinit var txtService : TextView
+    lateinit var txtHome : TextView
+    lateinit var txtOrder : TextView
+    lateinit var llHome : LinearLayout
+    lateinit var llProfile : LinearLayout
+    lateinit var llService : LinearLayout
+    lateinit var llOrder : LinearLayout
+    lateinit var imgService : ImageView
+    lateinit var imgHome : ImageView
+    lateinit var imgOrder : ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        layoutInflater.inflate(R.layout.activity_bottom_view_navigation, container2)
 
-        binding = ActivityBottomViewNavigationBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        txtService =findViewById(R.id.txtService)
+        txtHome =findViewById(R.id.txtHome)
+        txtOrder =findViewById(R.id.txtOrder)
+        llHome =findViewById(R.id.llHome)
+        llProfile =findViewById(R.id.llProfile)
+        llService =findViewById(R.id.llService)
+        llOrder =findViewById(R.id.llOrder)
+        imgService =findViewById(R.id.imgService)
+        imgHome =findViewById(R.id.imgHome)
+        imgOrder =findViewById(R.id.imgOrder)
 
-        loadFragment(HomeFragment())
+        loadFragment(HomeFragment(drawerLayout))
         setOnCLickListener()
 
     }
 
     private fun setOnCLickListener(){
-        binding.llHome.setOnClickListener {
-            loadFragment(HomeFragment())
+        llHome.setOnClickListener {
+            loadFragment(HomeFragment(drawerLayout))
 
-            binding.txtService.setTextColor(ContextCompat.getColor(this, R.color.white))
-            binding.txtHome.setTextColor(ContextCompat.getColor(this, R.color.orange))
-            binding.txtOrder.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtService.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtHome.setTextColor(ContextCompat.getColor(this, R.color.orange))
+            txtOrder.setTextColor(ContextCompat.getColor(this, R.color.white))
 
-            binding.txtService.setTextAppearance(R.style.poppinsRegularText)
-            binding.txtHome.setTextAppearance(R.style.poppinsSemiBoldText)
-            binding.txtOrder.setTextAppearance(R.style.poppinsRegularText)
+            txtService.setTextAppearance(R.style.poppinsRegularText)
+            txtHome.setTextAppearance(R.style.poppinsSemiBoldText)
+            txtOrder.setTextAppearance(R.style.poppinsRegularText)
 
-            binding.imgService.setImageResource(R.drawable.service_white)
-            binding.imgHome.setImageResource(R.drawable.home_orange)
-            binding.imgOrder.setImageResource(R.drawable.order_white)
+            imgService.setImageResource(R.drawable.service_white)
+            imgHome.setImageResource(R.drawable.home_orange)
+            imgOrder.setImageResource(R.drawable.order_white)
         }
 
-        binding.llProfile.setOnClickListener {
+        llProfile.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 
-        binding.llService.setOnClickListener {
+        llService.setOnClickListener {
             loadFragment(ServiceFragment())
-            binding.txtService.setTextColor(ContextCompat.getColor(this, R.color.orange))
-            binding.txtHome.setTextColor(ContextCompat.getColor(this, R.color.white))
-            binding.txtOrder.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtService.setTextColor(ContextCompat.getColor(this, R.color.orange))
+            txtHome.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtOrder.setTextColor(ContextCompat.getColor(this, R.color.white))
 
-            binding.txtService.setTextAppearance(R.style.poppinsSemiBoldText)
-            binding.txtHome.setTextAppearance(R.style.poppinsRegularText)
-            binding.txtOrder.setTextAppearance(R.style.poppinsRegularText)
+            txtService.setTextAppearance(R.style.poppinsSemiBoldText)
+            txtHome.setTextAppearance(R.style.poppinsRegularText)
+            txtOrder.setTextAppearance(R.style.poppinsRegularText)
 
-            binding.imgService.setImageResource(R.drawable.service_orange)
-            binding.imgHome.setImageResource(R.drawable.home_white)
-            binding.imgOrder.setImageResource(R.drawable.order_white)
+            imgService.setImageResource(R.drawable.service_orange)
+            imgHome.setImageResource(R.drawable.home_white)
+            imgOrder.setImageResource(R.drawable.order_white)
         }
 
-        binding.llOrder.setOnClickListener {
+        llOrder.setOnClickListener {
             loadFragment(OrderFragment())
 
-            binding.txtService.setTextColor(ContextCompat.getColor(this, R.color.white))
-            binding.txtHome.setTextColor(ContextCompat.getColor(this, R.color.white))
-            binding.txtOrder.setTextColor(ContextCompat.getColor(this, R.color.orange))
+            txtService.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtHome.setTextColor(ContextCompat.getColor(this, R.color.white))
+            txtOrder.setTextColor(ContextCompat.getColor(this, R.color.orange))
 
-            binding.txtService.setTextAppearance(R.style.poppinsRegularText)
-            binding.txtHome.setTextAppearance(R.style.poppinsRegularText)
-            binding.txtOrder.setTextAppearance(R.style.poppinsSemiBoldText)
+            txtService.setTextAppearance(R.style.poppinsRegularText)
+            txtHome.setTextAppearance(R.style.poppinsRegularText)
+            txtOrder.setTextAppearance(R.style.poppinsSemiBoldText)
 
-            binding.imgService.setImageResource(R.drawable.service_white)
-            binding.imgHome.setImageResource(R.drawable.home_white)
-            binding.imgOrder.setImageResource(R.drawable.order_orange)
+            imgService.setImageResource(R.drawable.service_white)
+            imgHome.setImageResource(R.drawable.home_white)
+            imgOrder.setImageResource(R.drawable.order_orange)
         }
     }
 
@@ -82,4 +103,6 @@ class BottomViewNavigationActivity : AppCompatActivity() {
         transaction.replace(R.id.container,fragment)
         transaction.commit()
     }
+
+
 }

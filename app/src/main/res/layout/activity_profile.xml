@@ -686,8 +686,7 @@
             android:padding="@dimen/_12ssp"
             android:text="@string/update_profile"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
-            android:visibility="gone" />
+            android:textSize="@dimen/_12ssp"/>
 
     </LinearLayout>
 

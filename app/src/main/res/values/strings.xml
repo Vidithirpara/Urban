@@ -105,4 +105,6 @@
     <string name="chat">chat</string>
     <string name="select_city">Select City</string>
     <string name="update_profile">Update Profile</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
 </resources>
