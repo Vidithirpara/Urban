@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_14sdp"
+    android:background="@drawable/rounded_corner_gray2"
+    android:paddingVertical="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_9sdp"
+    android:layout_marginHorizontal="@dimen/_12sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07 October 2024"
+            style="@style/poppinsRegularText"
+            android:textColor="@color/black2"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_10sdp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@color/gray2"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Ticket"
+            style="@style/poppinsRegularText"
+            android:textColor="@color/black2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Login Issue"
+        style="@style/poppinsSemiBoldText"
+        android:textColor="@color/black2"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/_10ssp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:src="@drawable/green_dot"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submitted on 24 August 2024"
+            style="@style/poppinsMediumText"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

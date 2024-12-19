@@ -62,6 +62,14 @@ fun validateFirstNameORLastName(context: Context, firstName : EditText, lastName
     return true
 }
 
+fun validateName(context: Context, name : EditText) : Boolean{
+    if (TextUtils.isEmpty(name.text)) {
+        Toast.makeText(context, "Please enter name", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
 fun validateEmailAddress(context: Context, emailAddress : EditText) : Boolean{
     if (TextUtils.isEmpty(emailAddress.text)){
         Toast.makeText(context, "Email address not empty", Toast.LENGTH_SHORT).show()
@@ -142,6 +150,18 @@ fun validatePincode(context: Context, pinCode : EditText) : Boolean{
     }
     else if(pinCode.text.length < 6){
         Toast.makeText(context, "Enter valid pincode", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    return true
+}
+
+fun validateGstNumber(context: Context, gstNumber : EditText) : Boolean{
+    if (TextUtils.isEmpty(gstNumber.text)){
+        Toast.makeText(context, "Please enter GST Number", Toast.LENGTH_SHORT).show()
+        return false
+    }
+    else if(gstNumber.text.length < 15){
+        Toast.makeText(context, "Enter valid GST Number", Toast.LENGTH_SHORT).show()
         return false
     }
     return true

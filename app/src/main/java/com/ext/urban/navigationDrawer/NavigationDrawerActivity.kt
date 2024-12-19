@@ -64,6 +64,21 @@ open class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavi
             val intent = Intent(this, BillingSettingsActivity::class.java)
             startActivity(intent)
         }
+
+        binding.llNotificationPreferences.setOnClickListener {
+            val intent = Intent(this, NotificationPreferencesActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.llWishlist.setOnClickListener {
+            val intent = Intent(this, WishListActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.llHelpCenter.setOnClickListener {
+            val intent = Intent(this, HelpCenterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

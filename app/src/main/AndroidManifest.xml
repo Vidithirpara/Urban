@@ -19,11 +19,23 @@
         android:theme="@style/Theme.Urban"
         tools:targetApi="31">
         <activity
+            android:name=".navigationDrawer.HelpCenterActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".navigationDrawer.HelpCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".navigationDrawer.WishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".navigationDrawer.NotificationPreferencesActivity"
+            android:exported="false" />
+        <activity
             android:name=".navigationDrawer.BillingSettingsActivity"
             android:exported="false" />
         <activity
             android:name=".navigationDrawer.NavigationDrawerActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".bottommenu.ProfileActivity"
             android:exported="false" />
