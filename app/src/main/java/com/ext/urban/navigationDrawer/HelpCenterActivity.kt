@@ -2,6 +2,7 @@ package com.ext.urban.navigationDrawer
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Message
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,7 @@ class HelpCenterActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityHelpCenterBinding
     private lateinit var adapterHelpCenter: AdapterHelpCenter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
